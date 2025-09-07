@@ -1,0 +1,21 @@
+{
+  "name": "rotstein-theme-shipmaster",
+  "displayName": "Shipmaster - Rotstein-Theme",
+  "description": "Theme Extension by Rotstein. \\nShipmaster Color Scheme:\\nGray = Silver/Metal\\nBlue = Accent Color\\nWhite = Main",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.103.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Rotstein - Shipmaster",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Rotstein - Shipmaster-color-theme.json"
+      }
+    ]
+  }
+}
