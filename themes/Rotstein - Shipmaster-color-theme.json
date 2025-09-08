@@ -1,59 +1,60 @@
 {
 	"name": "Rotstein - Shipmaster",
 	"colors": {
-		
-    "button.background": "#fcd395",
-    "button.foreground": "#2e2923",
-    "button.hoverBackground": "#e74946",
 
-    "diffEditor.insertedTextBackground": "#00809B33",
+		// Terminal
+		"terminal.foreground": "#4EF28E",
+		"terminal.background": "#0B0D10",
 
-    "dropdown.background": "#2e2923",
-    "dropdown.border": "#292521",
+		"terminal.ansiBlack": "#0B0D10",
+		"terminal.ansiRed": "#E03C31",
+		"terminal.ansiGreen": "#4CB605",
+		"terminal.ansiYellow": "#FCD395",
+		"terminal.ansiBlue": "#356FE4",
+		"terminal.ansiMagenta": "#FCBE95",
+		"terminal.ansiCyan": "#3FC4CE",
+		"terminal.ansiWhite": "#DCDCDC",
 
-    "list.activeSelectionBackground": "#fcd39552",
-    "list.activeSelectionForeground": "#292521",
-    "list.focusBackground": "#fcd39552",
-    "list.hoverForeground": "#D7DAE0",
-    "list.hoverBackground": "#fcd3954f",
-    "list.highlightForeground": "#D7DAE0",
-    "list.inactiveSelectionBackground": "#fcda9523",
-    "list.inactiveSelectionForeground": "#D7DAE0",
+		"terminal.ansiBrightBlack": "#1E1E1E",
+		"terminal.ansiBrightRed": "#FF5A4D",
+		"terminal.ansiBrightGreen": "#86D63B",
+		"terminal.ansiBrightYellow": "#FFE18F",
+		"terminal.ansiBrightBlue": "#5A89FF",
+		"terminal.ansiBrightMagenta": "#FFD5B0",
+		"terminal.ansiBrightCyan": "#7FDFFF",
+		"terminal.ansiBrightWhite": "#FFFFFF",
 
-    "pickerGroup.border": "#fcda9560",
+		"terminal.selectionBackground": "#1fb5e7a0",
+		"terminalCursor.background": "#D9A441",
+		"terminalCursor.foreground": "#D9A441",
 
-    "scrollbarSlider.background": "#fcda9523",
-    "scrollbarSlider.activeBackground": "#fcda9523",
-    "scrollbarSlider.hoverBackground": "#fcda9523",
+		// Miscellaneous
+		"debugToolBar.background": "#a045ca",
+		"walkThrough.embeddedEditorBackground": "#242628",
+	    "diffEditor.insertedTextBackground": "#1fb5e733",
 
-    "statusBarItem.hoverBackground": "#2C313A",
-    "statusBar.noFolderBackground": "#2e2923",
-
-    "extensionButton.prominentBackground": "#e74946",
-    "extensionButton.prominentHoverBackground": "#de3d3a59",
-
-    "terminal.foreground": "#fff",
-    "terminal.ansiBlue": "#356fe4",
-    "terminal.ansiBrightBlue": "#356fe4",
-    "terminal.ansiBrightCyan": "#3fc4ce",
-    "terminal.ansiBrightGreen": "#4cb605",
-    "terminal.ansiBrightMagenta": "#fcbe95",
-    "terminal.ansiBrightRed": "#e74946",
-    "terminal.ansiBrightYellow": "#fcd395",
-    "terminal.ansiCyan": "#3fc4ce",
-    "terminal.ansiGreen": "#4cb605",
-    "terminal.ansiMagenta": "#fcbe95",
-    "terminal.ansiRed": "#e74946",
-    "terminal.ansiYellow": "#fcd395",
-    "terminal.selectionBackground": "#F2F2F23b",
-    "terminalCursor.background": "#070930",
-    "terminalCursor.foreground": "#fcd395",
-
-    "debugToolBar.background": "#1C1E26",
-    "walkThrough.embeddedEditorBackground": "#1C1E26",
-
-
-
+		// Selection
+		"focusBorder": "#D9A441",
+		"list.activeSelectionBackground": "#1fb5e7a0",
+		"list.activeSelectionForeground": "#ffffff",
+		"list.focusBackground": "#ffffff00",
+		"list.hoverForeground": "#0B0D10",
+		"list.inactiveSelectionForeground": "#0B0D10",
+		"list.highlightForeground": "#0B0D10",
+		"list.hoverBackground": "#D9A441",
+		"list.inactiveSelectionBackground": "#D9A441",
+		"pickerGroup.border": "#D9A441",
+		"dropdown.background": "#0B0D10",
+    	"dropdown.border": "#ffffff00",
+		"scrollbarSlider.background": "#4ef28da0",
+    	"scrollbarSlider.activeBackground": "#4ef28da0",
+    	"scrollbarSlider.hoverBackground": "#4ef28da0",
+		"button.background": "#4EF28E",
+		"button.foreground": "#0B0D10",
+		"button.hoverBackground": "#D9A441",
+		// IT DONT WORK?!
+		"extensionButton.prominentBackground": "#4EF28E",
+    	"extensionButton.prominentHoverBackground": "#D9A441",
 
 		// Editor
 		"editor.background": "#242628",
@@ -66,7 +67,6 @@
 		"editorLineNumber.activeForeground": "#D9A441",
 		"editorBracketMatch.border": "#a045ca",
 
-		
 		"editorGroup.border": "#181A1F",
 		"editorGroupHeader.tabsBackground": "#292521",
 		"editorWhitespace.foreground": "#fcda9523",
@@ -96,7 +96,6 @@
 		"titleBar.inactiveForeground": "#0B0D10",
 		"input.background": "#0B0D10",
 		"input.border": "#4EF28E",
-    	"focusBorder": "#4EF28E",
 
 		// Activity bar (left side with icons)
 		"activityBar.background": "#B9C0C6",
@@ -115,6 +114,8 @@
 		"statusBar.foreground": "#0B0D10",
 		"statusBar.debuggingBackground": "#4EF28E",
 		"statusBar.debuggingForeground": "#0B0D10",
+		"statusBarItem.hoverBackground": "#D9A441",
+    	"statusBar.noFolderBackground": "#4a6454",
 
 		// Panel (bottom area with terminal/output)
 		"panel.background": "#0B0D10",
@@ -132,11 +133,16 @@
 	"tokenColors": [
 		{
 			"name": "Comment",
-			"scope": "comment",
+			"scope": [
+				"comment",
+				"comment.block",
+				"comment.block.documentation",
+				"punctuation.definition.comment"
+			],
 			"settings": {
 				"foreground": "#6A2C86",
 				"fontStyle": "italic"
-			}
+			}	
 		},
 		{
 			"name": "String",
